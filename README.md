@@ -1,20 +1,8 @@
 # Bright Eyes
 
-Portfolio showcase for a single-clinic ophthalmology workflow application built with Flutter and Firebase.
+> Ophthalmology clinic workflow prototype · Flutter / Firebase · 2024
 
-## Overview
-Bright Eyes is a healthcare application prototype designed for ophthalmology clinics. It supports patient authentication, clinic-managed appointment scheduling, registered-patient management, and structured right/left-eye reports that doctors can edit while patients can view them in read-only mode.
-
-## Key Features
-- Patient authentication and account flows
-- Appointment scheduling and clinic workflow management
-- Registered-patient management
-- Structured ophthalmology reports for both eyes
-- Doctor-editable and patient read-only medical views
-- Mobile-first interface and role-aware experiences
-
-## Tech Stack
-Flutter · Dart · GetX · Firebase Authentication · Cloud Firestore
+Bright Eyes models the core workflow of a single ophthalmology clinic with separate patient and clinic/doctor experiences, including onboarding, scheduling, registered-patient management, and structured right/left-eye examination reports.
 
 ## Product Preview
 
@@ -33,31 +21,77 @@ Flutter · Dart · GetX · Firebase Authentication · Cloud Firestore
 </div>
 
 <details>
-<summary><strong>View more screenshots</strong></summary>
+<summary><strong>View 4 more screenshots</strong></summary>
 <br>
-
 <div align="center">
   <img width="31%" src="https://github.com/user-attachments/assets/6a69c2c6-ad33-40dd-96a5-abb42957b8c8" />
   <img width="31%" src="https://github.com/user-attachments/assets/6bf0edc2-d22f-435c-b11d-cae115755cb6" />
   <img width="31%" src="https://github.com/user-attachments/assets/41a34cbe-ed7f-4445-8a10-100424e74953" />
 </div>
-
 <br>
-
 <div align="center">
   <img width="31%" src="https://github.com/user-attachments/assets/8d7a921d-aa69-424a-bd91-f82655c02147" />
 </div>
-
 </details>
 
+## Patient Experience
+- Account registration and authentication
+- Patient profile setup
+- Clinic-opened appointment dates
+- Appointment time selection with conflict prevention
+- Appointment tracking and cancellation
+- Read-only access to structured eye-examination results
+- Eye-health awareness content
+
+## Clinic / Doctor Experience
+- Controlled clinic/doctor access path
+- Registered-patient management
+- Scheduling and appointment administration
+- Structured right/left-eye examination fields
+- Editable clinical values with patient read-only access
+
 ## Engineering Focus
-The project emphasizes role-based application behavior, clinic workflow clarity, structured medical data presentation, and practical mobile UX.
+- Cross-platform UI built with Flutter and Dart
+- Firebase Authentication for patient account flows
+- Cloud Firestore for persistent application data
+- GetX for navigation and controller/state usage
+- Appointment conflict checks around configured booking intervals
+- Structured ophthalmology report data for both eyes
+- Separation between editable clinic workflows and read-only patient report access
+
+## Tech Stack
+`Flutter` · `Dart` · `Firebase Authentication` · `Cloud Firestore` · `GetX` · `intl` · `Awesome Dialog` · `Animated Text Kit` · `Staggered Animations` · `Flutter TypeAhead`
+
+## Architecture Snapshot
+
+```text
+Patient UI                    Clinic / Doctor UI
+    │                                │
+    └──────────────┬─────────────────┘
+                   ▼
+             Flutter / GetX
+                   │
+       ├── Authentication Flows
+       ├── Appointment Scheduling
+       ├── Patient Management
+       └── Structured Eye Reports
+                   │
+                   ▼
+          Firebase Services
+```
+
+This public architecture intentionally stays high-level and excludes credentials, security rules, private configuration, and unnecessary implementation detail.
+
+## Project Scope
+Bright Eyes is a working learning/portfolio prototype rather than a production medical-record system. Production use would require hardened authorization, stronger backend/security controls, and healthcare-specific compliance review.
+
+The later **HealHub** project expands this direction into broader multi-clinic and multi-role healthcare workflows.
 
 ## Project Status
-Working prototype / portfolio project.
+**Working prototype · Private source · Portfolio showcase**
 
 ## Source Policy
-**Portfolio showcase only. The production/full source repository is private and protected. Source code and sensitive implementation details are intentionally not published.**
+**Portfolio showcase only. The production/full source repository is private and protected. Source code, credentials, private configuration, and sensitive implementation details are intentionally not published.**
 
 ## Rights
 © Karam Alawaj. All rights reserved. No license is granted to copy, redistribute, reuse, or republish proprietary source or implementation details.
