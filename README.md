@@ -16,6 +16,40 @@ Bright Eyes is a healthcare application prototype designed for ophthalmology cli
 ## Tech Stack
 Flutter · Dart · GetX · Firebase Authentication · Cloud Firestore
 
+## Product Preview
+
+<div align="center">
+  <img width="31%" src="https://github.com/user-attachments/assets/c52b525a-c9bb-40d8-994a-d767ad626c10" />
+  <img width="31%" src="https://github.com/user-attachments/assets/e71ddd1e-0bc0-4ac7-99f6-3c1386d03499" />
+  <img width="31%" src="https://github.com/user-attachments/assets/7c506f9e-b4d8-4666-bc40-fd82177221e4" />
+</div>
+
+<br>
+
+<div align="center">
+  <img width="31%" src="https://github.com/user-attachments/assets/6671f503-91f8-4d94-86f6-9a637a66b69f" />
+  <img width="31%" src="https://github.com/user-attachments/assets/fc9321b7-4d87-4809-9b46-4be662e9b47c" />
+  <img width="31%" src="https://github.com/user-attachments/assets/62908be7-d96b-4715-bebf-f10a292a5e09" />
+</div>
+
+<details>
+<summary><strong>View more screenshots</strong></summary>
+<br>
+
+<div align="center">
+  <img width="31%" src="https://github.com/user-attachments/assets/6a69c2c6-ad33-40dd-96a5-abb42957b8c8" />
+  <img width="31%" src="https://github.com/user-attachments/assets/6bf0edc2-d22f-435c-b11d-cae115755cb6" />
+  <img width="31%" src="https://github.com/user-attachments/assets/41a34cbe-ed7f-4445-8a10-100424e74953" />
+</div>
+
+<br>
+
+<div align="center">
+  <img width="31%" src="https://github.com/user-attachments/assets/8d7a921d-aa69-424a-bd91-f82655c02147" />
+</div>
+
+</details>
+
 ## Engineering Focus
 The project emphasizes role-based application behavior, clinic workflow clarity, structured medical data presentation, and practical mobile UX.
 
