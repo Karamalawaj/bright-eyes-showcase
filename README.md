@@ -82,6 +82,10 @@ Patient UI                    Clinic / Doctor UI
 
 This public architecture intentionally stays high-level and excludes credentials, security rules, private configuration, and unnecessary implementation detail.
 
+## Production Readiness
+
+The prototype now has a concrete [production-readiness roadmap](PRODUCTION_READINESS.md) covering authorization, Firestore security, appointment race-condition prevention, clinical auditability, privacy/configuration, testing, monitoring, backups, and release checks. It is an engineering plan rather than a claim of healthcare or regulatory compliance.
+
 ## Project Scope
 Bright Eyes is a working learning/portfolio prototype rather than a production medical-record system. Production use would require hardened authorization, stronger backend/security controls, and healthcare-specific compliance review.
 
